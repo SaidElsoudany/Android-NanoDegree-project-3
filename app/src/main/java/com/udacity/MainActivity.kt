@@ -122,6 +122,8 @@ class MainActivity : AppCompatActivity() {
 
         downloadID =
             downloadManager.enqueue(request)// enqueue puts the download request in the queue.
+
+        //Using it for observe timeout in case of low connectivity
         initStatusObserver(downloadID)
     }
 
